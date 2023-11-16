@@ -1,0 +1,25 @@
+name: Build and Deploy Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Build Documentation
+      run: |
+        # Comandos para construir la documentación, por ejemplo, generar HTML a partir de archivos Markdown.
+        # Reemplaza estos comandos con los adecuados para tu proyecto.
+
+    - name: Deploy to GitHub Pages
+      if: github.ref == 'refs/heads/main'
+      run: |
+        # Comandos para desplegar la documentación, por ejemplo, a GitHub Pages.
+        # Reemplaza estos comandos con los adecuados para tu proyecto.
